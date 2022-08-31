@@ -1,0 +1,461 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  background-color: #fdfbf4;
+  overflow-x: hidden;
+}
+
+.inner_wrap {
+  width: 1700px;
+  margin: auto;
+}
+
+/* header */
+
+header {
+  width: 100%;
+  height: 50px;
+  padding: 16px 0;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(254, 252, 245, 1);
+}
+
+.top_logo {
+  background: url("../img/GRANHAND_logo.png") no-repeat;
+  text-indent: -9999em;
+  width: 170px;
+  height: 34px;
+  position: absolute;
+  left: 100px;
+  bottom: 25px;
+}
+
+.nav_box {
+  position: absolute;
+  right: -170px;
+  bottom: 0px;
+  width: 1300px;
+  padding: 16px 0;
+}
+
+.gnb {
+  width: 1150px;
+}
+
+.gnb > li {
+  float: left;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-family: "Gothic A1", sans-serif;
+}
+
+.gnb > li:nth-child(1) a {
+  color: #191918;
+}
+
+.gnb > li:nth-child(2) a {
+  color: #4b4b49;
+}
+
+.gnb > li:nth-child(3) a {
+  color: #656462;
+}
+
+.gnb > li:nth-child(4) a {
+  color: #858480;
+}
+
+.gnb > li:nth-child(5) a {
+  color: #989792;
+}
+
+.gnb > li:nth-child(6) a {
+  color: #b1afaa;
+}
+
+.gnb > li:nth-child(7) a {
+  color: #bebcb7;
+}
+
+.gnb > li:nth-child(8) a {
+  color: #cac9c3;
+}
+
+.gnb > li:nth-child(9) a {
+  color: #d7d6d0;
+}
+
+.gnb > li:nth-child(10) a {
+  color: #d7d6d0;
+}
+
+.gnb > li:nth-child(11) a {
+  color: #d7d6d0;
+}
+
+.snb {
+  display: none;
+  position: absolute;
+  -top: 100px;
+  z-index: 100;
+}
+
+.snb > li {
+  padding: 10px 0;
+}
+
+.lan a {
+  padding: 0 7px;
+  color: #d7d6d0;
+}
+
+.gnb > li:nth-child(1) a:hover {
+  color: #d7d6d0;
+}
+
+.gnb > li:nth-child(2) a:hover {
+  color: #d7d6d0;
+}
+
+.gnb > li:nth-child(3) a:hover {
+  color: #d7d6d0;
+}
+
+.gnb > li:nth-child(4) a:hover {
+  color: #cac9c3;
+}
+
+.gnb > li:nth-child(5) a:hover {
+  color: #bebcb7;
+}
+
+.gnb > li:nth-child(6) a:hover {
+  color: #b1afaa;
+}
+
+.gnb > li:nth-child(7) a:hover {
+  color: #989792;
+}
+
+.gnb > li:nth-child(8) a:hover {
+  color: #858480;
+}
+
+.gnb > li:nth-child(9) a:hover {
+  color: #656462;
+}
+
+.gnb > li:nth-child(10) a:hover {
+  color: #4b4b49;
+}
+
+.gnb > li:nth-child(11) a:hover {
+  color: #191918;
+}
+
+.lan a:hover {
+  color: #191918;
+}
+
+/* section */
+
+.top_menu {
+  margin-top: 240px;
+  margin-bottom: 50px;
+  height: 100px;
+  width: 100%;
+  position: relative;
+}
+
+.left_menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #191918;
+}
+
+.smell_menu > li {
+  float: left;
+  font-size: 35px;
+  font-weight: bold;
+  padding: 20px 10px;
+}
+
+.smell_menu > li > a {
+  color: #858480;
+}
+
+.smell_menu > li:first-child {
+  padding: 20px 10px 20px 0;
+}
+
+.smell_menu > li > a:hover {
+  color: #191918;
+}
+
+.smell_menu > li.select {
+  color: #191918;
+}
+
+.active {
+  color: #191918;
+}
+
+.right_menu {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
+.price_menu > li {
+  float: left;
+  padding: 10px;
+}
+
+.price_menu > li > a {
+  color: #b1afaa;
+}
+
+/* product */
+
+.product {
+  position: relative;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 140px;
+}
+
+.product_box {
+  position: relative;
+}
+
+.product_pic {
+  width: 500px;
+  height: 600px;
+}
+
+.product_pic > a {
+  width: 500px;
+  height: 600px;
+}
+
+.product_text {
+  position: relative;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.product_left {
+  position: absolute;
+  left: 0;
+}
+
+.product_name {
+  font-size: 19px;
+  margin-bottom: 5px;
+}
+
+.price_col {
+  color: #555;
+}
+
+.product_right {
+  position: absolute;
+  right: 0;
+  text-align: right;
+  color: #989792;
+}
+
+.product_kon {
+  margin-bottom: 5px;
+}
+
+.marne {
+  background: url("../perfume_img/marne.jpeg") no-repeat;
+  background-size: cover;
+}
+
+.weimar {
+  background: url("../perfume_img/weimar.jpeg") no-repeat;
+  background-size: cover;
+}
+
+.sopni {
+  background: url("../perfume_img/sopni.jpeg") no-repeat;
+  background-size: cover;
+}
+
+.marine {
+  background: url("../perfume_img/marine.jpeg") no-repeat;
+  background-size: cover;
+}
+
+.susie {
+  background: url("../perfume_img/susie.jpeg") no-repeat;
+  background-size: cover;
+}
+
+.kyujang {
+  background: url("../perfume_img/kyujang.jpeg") no-repeat;
+  background-size: cover;
+}
+
+.kyujang_mar {
+  background: url("../perfume_img/kyujang_marker.jpeg") no-repeat;
+  background-size: cover;
+}
+
+.lucien_mar {
+  background: url("../perfume_img/luciencar_marker.jpeg") no-repeat;
+  background-size: cover;
+}
+
+.roland_mar {
+  background: url("../perfume_img/roland_marker.jpeg") no-repeat;
+  background-size: cover;
+}
+
+.cask {
+  background: url("../perfume_img/cask.jpeg") no-repeat;
+  background-size: cover;
+}
+
+.modle {
+  background: url("../perfume_img/modle.jpeg") no-repeat;
+  background-size: cover;
+}
+
+.toit {
+  background: url("../perfume_img/toit.jpeg") no-repeat;
+  background-size: cover;
+}
+
+.roland {
+  background: url("../perfume_img/roland.jpeg") no-repeat;
+  background-size: cover;
+}
+
+.lucien {
+  background: url("../perfume_img/luciencar.jpeg") no-repeat;
+  background-size: cover;
+}
+
+.lucy {
+  background: url("../perfume_img/lucydiamond.jpeg") no-repeat;
+  background-size: cover;
+}
+
+.vivian {
+  background: url("../perfume_img/vivian.jpeg") no-repeat;
+  background-size: cover;
+}
+
+.wegener {
+  background: url("../perfume_img/wegener.jpeg") no-repeat;
+  background-size: cover;
+}
+
+.lily {
+  background: url("../perfume_img/lily.jpeg") no-repeat;
+  background-size: cover;
+}
+
+.violette {
+  background: url("../perfume_img/violette.jpeg") no-repeat;
+  background-size: cover;
+}
+
+.lumberjack {
+  background: url("../perfume_img/lumberjack.jpeg") no-repeat;
+  background-size: cover;
+}
+/* footer */
+
+footer {
+  width: 100%;
+  height: 300px;
+  margin-top: 50px;
+  position: relative;
+}
+
+footer > .inner_wrap {
+  border-top: 1px solid #ccc;
+}
+
+.bottom_row {
+  padding: 30px 0;
+}
+
+.sns {
+  float: left;
+  width: 100px;
+}
+
+.sns a {
+  color: #555;
+}
+
+.bottom_text_1 {
+  float: left;
+  font-size: 14px;
+  width: 300px;
+  color: #555;
+}
+
+.bottom_text_2 {
+  float: right;
+  font-size: 12px;
+  width: 800px;
+  margin-right: 100px;
+  color: #555;
+}
+
+address {
+  font-style: normal;
+  font-size: 12px;
+  padding: 20px 0;
+  color: #ccc;
+}
+
+address ul li {
+  float: left;
+  padding: 0 5px;
+}
+
+address ul li a {
+  color: #ccc;
+}
+
+.bottom_logo {
+  width: 190px;
+  height: 34px;
+  position: absolute;
+  bottom: 50px;
+  left: calc(50% - 85px);
+  display: none;
+}
